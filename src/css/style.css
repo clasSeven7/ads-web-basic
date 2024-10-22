@@ -560,103 +560,58 @@ ul li {
 }
 
 /* ================================ Areas Activity ========================== */
-/* .areas-activity p {
-  padding-bottom: 2rem;
-}
-
-.areas-activity-list {
-  background-color: var(--white-color);
-  border-radius: 0.5rem;
-  padding: 2%;
-}
-
-.areas-activity-list .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
-}
-
-.areas-activity .box-container .box .links {
-  display: block;
-  font-size: 1.5rem;
-  color: var(--tertiary-color);
-  padding: 1rem 0;
-}
-
-.areas-activity .areas-activity-list .box-container .box .links i {
-  color: var(--secondary-color);
-  padding-right: 0.5rem;
-  font-size: 1.4rem;
-}
-
-.areas-activity .box-container .box .links:hover i {
-  padding-right: 2rem;
-} */
-
 .areas-activity {
-  padding: 0;
-  margin: 0;
-  background-color: #eee;
-}
-
-.areas-activity .carousel-container {
-  position: relative;
-  padding: 5rem 6% 10rem 6%;
-  width: 100vw;
-  margin: 0 auto;
+  padding: 2rem;
   background-color: #eee;
   box-shadow: var(--box-shadow);
   text-align: center;
 }
 
-.areas-activity .carousel-container .carousel {
+.areas-activity .carrossel-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 5rem 6rem 5rem;
+}
+
+.areas-activity .carrossel-container .carrossel {
   display: flex;
   justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.areas-activity .carousel-container .carousel-item {
-  max-width: 25rem;
-  margin: 1rem;
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.areas-activity .carousel-container .carousel-item .item-1,
-.areas-activity .carousel-container .carousel-item .item-2,
-.areas-activity .carousel-container .carousel-item .item-3,
-.areas-activity .carousel-container .carousel-item .item-4 {
-  height: 100%;
+.areas-activity .carrossel-container .carousel-item {
   background-color: var(--white-color);
+  max-width: 25rem;
   border-radius: 1rem;
+  box-shadow: var(--box-shadow);
   transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
-.areas-activity .carousel-container .carousel .carousel-item .item-1:hover,
-.areas-activity .carousel-container .carousel .carousel-item .item-2:hover,
-.areas-activity .carousel-container .carousel .carousel-item .item-3:hover,
-.areas-activity .carousel-container .carousel .carousel-item .item-4:hover {
-  cursor: grab;
-  border-radius: 1rem;
+.areas-activity .carrossel-container .carousel-item:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
-.areas-activity .carousel-container .carousel-item h3 {
+.areas-activity .carrossel-container .carousel-item img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.areas-activity .carrossel-container .carousel-item h3 {
   padding: 1rem;
   font-size: 1.8rem;
   color: var(--primary-color);
   text-align: left;
 }
 
-.areas-activity .carousel-container .carousel-item p {
+.areas-activity .carrossel-container .carousel-item p {
   padding: 1rem;
   font-size: 1.4rem;
   color: var(--tertiary-color);
   text-align: left;
-  font-weight: 400;
-}
-
-.areas-activity .carousel-container .carousel-item img {
-  border-radius: 1rem 1rem 0 0;
 }
 
 /* ================================= Curriculum ============================= */
