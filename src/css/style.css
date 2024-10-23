@@ -512,36 +512,30 @@ ul li {
 }
 
 /* ========================= Professional Profile ============================*/
-.professional-profile p {
-  padding-bottom: 2rem;
-}
-
-.professional-profile-list {
+.professional-profile {
   background-color: var(--white-color);
-  border-radius: 0.5rem;
-  padding: 2%;
 }
 
-.professional-profile-list .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
+.professional-profile .box-container {
+  display: block;
+  padding-left: 2rem;
+  border-top: solid 0.1rem var(--secondary-color);
 }
 
-.professional-profile .box-container .box .links {
+.professional-profile .box-container .links {
   display: block;
   font-size: 1.5rem;
   color: var(--tertiary-color);
   padding: 1rem 0;
 }
 
-.professional-profile-list .box-container .box .links i {
+.professional-profile .box-container .links i {
   color: var(--secondary-color);
   padding-right: 0.5rem;
   font-size: 1.4rem;
 }
 
-.professional-profile .box-container .box .links:hover i {
+.professional-profile .box-container .links:hover i {
   padding-right: 2rem;
 }
 
@@ -563,7 +557,7 @@ ul li {
 .areas-activity {
   padding: 2rem;
   background-color: #eee;
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
   text-align: center;
 }
 
