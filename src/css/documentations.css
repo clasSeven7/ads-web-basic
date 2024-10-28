@@ -88,3 +88,11 @@ ul li {
   background: var(--secondary-color);
   color: var(--white-color);
 }
+
+/* ================================ Container =============================== */
+.container {
+  /* height: 100vh; */
+  width: 100%;
+}
+
+/* ============================= requirements =============================== */

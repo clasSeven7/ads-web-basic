@@ -518,8 +518,10 @@ ul li {
 
 .professional-profile .box-container {
   display: block;
-  padding-left: 2rem;
-  border-top: solid 0.1rem var(--secondary-color);
+  margin-top: 2rem;
+  padding-left: 4rem;
+  /* background-color: #eee; */
+  border-radius: 0.5rem;
 }
 
 .professional-profile .box-container .links {
@@ -610,36 +612,28 @@ ul li {
 }
 
 /* ================================= Curriculum ============================= */
-.curriculum p {
-  padding-bottom: 2rem;
-}
-
-.curriculum-list {
-  background-color: var(--white-color);
+.curriculum .box-container {
+  display: block;
+  margin-top: 2rem;
+  padding-left: 4rem;
+  /* background-color: #eee; */
   border-radius: 0.5rem;
-  padding: 2%;
 }
 
-.curriculum-list .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
-}
-
-.curriculum-list .box-container .box .links {
+.curriculum .box-container .links {
   display: block;
   font-size: 1.5rem;
   color: var(--tertiary-color);
   padding: 1rem 0;
 }
 
-.curriculum-list .box-container .box .links i {
+.curriculum .box-container .links i {
   color: var(--secondary-color);
   padding-right: 0.5rem;
   font-size: 1.4rem;
 }
 
-.curriculum-list .box-container .box .links:hover i {
+.curriculum .box-container .links:hover i {
   padding-right: 2rem;
 }
 
