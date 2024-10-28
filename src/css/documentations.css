@@ -285,10 +285,7 @@ ul li {
 
 .container-right {
   flex: 1; /* 20% */
-  padding: 2rem;
-  background-color: #f5f5f5;
-  border-radius: 0.8rem;
-  box-shadow: var(--box-shadow);
+  padding: 0;
 }
 
 .utilities {
@@ -297,33 +294,36 @@ ul li {
 }
 
 .utilities h1 {
-  color: #2a2a8a;
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 3rem;
 }
 
-.utilities ul {
+.utilities .utilities-list {
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
   list-style: none;
-  padding: 0;
+  padding: 2rem;
 }
 
-.utilities ul li {
-  margin-bottom: 10px;
+.utilities .utilities-list li {
+  margin-bottom: 1rem;
+  border-bottom: 0.1rem solid #e0e0e0;
 }
 
-.utilities ul li a {
-  color: #2a2a8a;
+.utilities .utilities-list li a {
+  color: var(--primary-color);
   font-weight: bold;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   display: block;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 1rem;
+  border-radius: 0.5rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.utilities ul li a:hover {
-  background-color: #2a2a8a;
+.utilities .utilities-list li a:hover {
+  background-color: var(--secondary-color);
   color: white;
 }
