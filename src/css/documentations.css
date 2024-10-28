@@ -1,3 +1,49 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --primary-color: #000c49;
+  --blue-color: #1f349e;
+  --secondary-color: #ee7d14;
+  --tertiary-color: #6e6d6d;
+  --quaternary-color: #000418;
+
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --outline-hover: 0.2rem solid var(--primary-color);
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  background-color: #eee;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
 /* ===================================== Home =============================== */
 
 .home {
@@ -91,8 +137,193 @@ ul li {
 
 /* ================================ Container =============================== */
 .container {
-  /* height: 100vh; */
-  width: 100%;
+  display: flex;
+  /* width: 90%; */
+  /* max-width: 120rem; */
+  margin-top: 2rem;
+  padding: 2rem;
 }
 
-/* ============================= requirements =============================== */
+/* =========================== container-left =============================== */
+
+.container-left {
+  flex: 4; /* 80% */
+  padding: 2rem;
+}
+
+.requirements {
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+.requirements h1 {
+  color: var(--primary-color);
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 2.6rem;
+}
+
+.requirements h2 {
+  color: #ff6600;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.requirements .folder-header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 1rem;
+  margin-top: 2.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border);
+  transition: transform 0.3s;
+}
+
+.requirements .folder .folder-header:hover {
+  transform: scale(1.02);
+}
+
+.requirements .folder .folder-header span {
+  font-size: 1.4rem;
+  margin-left: 2rem;
+}
+
+.requirements .document-list {
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--white-color);
+  border: 0.1rem solid #ccc;
+  margin-bottom: 3rem;
+  border-radius: var(--border);
+  padding: 0.5rem 2rem 2rem 2rem;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.requirements .document-list.active {
+  max-height: 50rem;
+  opacity: 1;
+}
+
+.requirements .document-list li {
+  list-style: none;
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.requirements .document-list li a {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.requirements .document-list li a:hover {
+  color: var(--secondary-color);
+}
+
+.requirements .document-list li i {
+  margin-right: 1rem;
+}
+
+/* =============================== files section ============================ */
+
+.files-section {
+  padding: 0;
+}
+
+.files-section h1 {
+  color: #ff6600;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.files-section .file-list {
+  list-style: none;
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+}
+
+.files-section .file-list li {
+  margin-bottom: 1rem;
+  border-bottom: 0.1rem solid #e0e0e0;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.files-section .file-list li a {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.files-section .file-list li a:hover {
+  color: var(--secondary-color);
+}
+
+.files-section .file-list li a i {
+  margin-right: 1rem;
+}
+
+/* =========================== container-right =============================== */
+
+.container-right {
+  flex: 1; /* 20% */
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 0.8rem;
+  box-shadow: var(--box-shadow);
+}
+
+.utilities {
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+.utilities h1 {
+  color: #2a2a8a;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.utilities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.utilities ul li {
+  margin-bottom: 10px;
+}
+
+.utilities ul li a {
+  color: #2a2a8a;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.utilities ul li a:hover {
+  background-color: #2a2a8a;
+  color: white;
+}

@@ -20,7 +20,7 @@
   <body>
     <header class="header">
       <a href="#" class="logo">
-        <img src="./src/assets/logo.png" alt="" />
+        <img src="../assets/logo.png" alt="" />
         ADS
       </a>
 
@@ -63,45 +63,140 @@
 
     <section class="container">
       <section class="container-left">
-        <div class="requirements">
+        <section class="requirements">
           <h1>DOCUMENTOS IMPORTANTES</h1>
-          <section class="">
-            <h2>PASTAS DE ARQUIVOS</h2>
-            <div class="folder">
-              <div class="folder-header">
-                <span>
-                  <i class="fa-regular fa-folder"></i>
-                  REQUERIMENTOS
-                </span>
-              </div>
-              </div>
-                <ul class="file-list">
-                  <li>
-                    <i class="fa-regular fa-file"></i>
-                    21/07/2022 - Edital para submissão de trabalhos - II COBPOS
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-file"></i>
-                    REQUERIMENTO - CURSAR COMPONENTE CURRICULAR EM OUTRA TURMA
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-file"></i>
-                    REQUERIMENTO - DISPENSA DE DISCIPLINA
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-file"></i>
-                    REQUERIMENTO - SOLICITAÇÃO DE DOCUMENTOS - UNIFIP</li>
-                  <li>
-                    <i class="fa-regular fa-file"></i>
-                    REQUERIMENTO - TRANCAMENTO DE MATRÍCULA DE CURSO
-                  </li>
-              </ul>
+          <h2>PASTAS DE ARQUIVOS</h2>
+
+          <div class="folder">
+            <div class="folder-header" onclick="toggleDocuments()">
+              <span>
+                <i class="fa-regular fa-folder"></i>
+                REQUERIMENTOS
+              </span>
             </div>
-          </section>
-        </div>
+            <ul class="document-list" id="documents">
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-file"></i>
+                  21/07/2022 - Edital para submissão de trabalhos - II COBPOS
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-file"></i>
+                  REQUERIMENTO - CURSAR COMPONENTE CURRICULAR EM OUTRA TURMA
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-file"></i>
+                  REQUERIMENTO - DISPENSA DE DISCIPLINA
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-file"></i>
+                  REQUERIMENTO - SOLICITAÇÃO DE DOCUMENTOS - UNIFIP
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-file"></i>
+                  REQUERIMENTO - TRANCAMENTO DE MATRÍCULA DE CURSO
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="files">
+            <section class="files-section">
+              <h1>ARQUIVOS</h1>
+              <ul class="file-list">
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-regular fa-file"></i> 
+                    25/07/2023 - Matrix curricular - Especialização em Direito Administrativo e Gestão Pública
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-regular fa-file"></i> 
+                    21/07/2022 - Edital para submissão de trabalhos - II COBPOS
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-regular fa-file"></i> 
+                    Resolução 001 CNE/CES - 06/04/2018
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-regular fa-file"></i> 
+                    12/06/2020 - Decisão ACP-RN
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-regular fa-file"></i> 
+                    REGIMENTO GERAL
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-regular fa-file"></i> 
+                    REGIMENTO DOS CURSOS DE APERFEIÇOAMENTO
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-regular fa-file"></i> 
+                    MANUAL DO ARTIGO CIENTÍFICO
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-regular fa-file"></i> 
+                    REQUERIMENTO - CURSAR COMPONENTE CURRICULAR EM OUTRA TURMA
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-regular fa-file"></i> 
+                    REQUERIMENTO - DISPENSA DE DISCIPLINA
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-regular fa-file"></i> 
+                    REQUERIMENTO - SOLICITAÇÃO DE DOCUMENTOS - UNIFIP
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-regular fa-file"></i> 
+                    REQUERIMENTO - TRANCAMENTO DE MATRÍCULA E DE CURSO
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </section>
       </section>
       <section class="container-right">
-
+        <section class="utilities">
+          <h1>UTILIDADES</h1>
+          <ul>
+              <li><a href="#">NOTÍCIAS</a></li>
+              <li><a href="#">REVISTA COOPEX</a></li>
+              <li><a href="#">DOWNLOADS</a></li>
+              <li><a href="#">BIBLIOTECA</a></li>
+              <li><a href="#">TRABALHE CONOSCO</a></li>
+              <li><a href="#">OUVIDORIA</a></li>
+              <li><a href="#">MATRÍCULA ACADÊMICA</a></li>
+              <li><a href="#">CALENDÁRIO ACADÊMICO</a></li>
+          </ul>
+        </section>
       </section>
     </section>
 
@@ -174,5 +269,6 @@
         Criado pelos alunos de <span>ADS</span> | todos os direitos reservados!
       </div>
     </section>
+    <script src="../js/documentations.js"></script>
   </body>
 </html>
