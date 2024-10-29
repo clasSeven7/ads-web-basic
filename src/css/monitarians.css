@@ -149,6 +149,82 @@ ul li {
   padding: 0 2rem 2rem 2rem;
 }
 
+.monitarians {
+  padding: 0;
+}
+
+.monitarians .breadcrumb {
+  padding: 1.4rem;
+  font-size: 1.4rem;
+  background-color: #eee;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.8rem;
+}
+
+.monitarians .breadcrumb a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+.monitarians .breadcrumb span {
+  color: var(--tertiary-color);
+}
+
+.monitarians .box-main {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.monitarians .box-main h1 {
+  font-size: 2.4rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.monitarians .box-main .news-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+}
+
+.monitarians .box-main .news-cards .card {
+  background-color: var(--white-color);
+  border-radius: 0.8rem;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  width: calc(33.33% - 2rem);
+  min-width: 28rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.monitarians .box-main .news-cards .card:hover {
+  transform: scale(1.02);
+}
+
+.monitarians .box-main .news-cards .card img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+
+.monitarians .box-main .news-cards .card .card-content {
+  padding: 1.6rem;
+}
+
+.monitarians .box-main .news-cards .card .card-content h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.monitarians .box-main .news-cards .card .card-content p {
+  font-size: 1.4rem;
+  color: #777;
+}
+
 /* =========================== container-right =============================== */
 
 .container-right {
