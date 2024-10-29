@@ -146,7 +146,67 @@ ul li {
 
 .container-left {
   flex: 4; /* 80% */
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.disciplines {
+  padding: 0 5% 0 0;
+}
+
+.disciplines .curriculum-structure {
+  text-align: center;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.disciplines .curriculum-structure .period {
+  margin-top: 2rem;
+}
+
+.disciplines .curriculum-structure .period h2 {
+  text-align: left;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.disciplines .curriculum-structure .period .subjects {
+  margin-bottom: 2rem;
+}
+
+.disciplines .curriculum-structure .period .subjects .subject {
+  background-color: var(--white-color);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s;
+  box-shadow: var(--box-shadow);
+}
+
+.disciplines .curriculum-structure .period .subjects .subject:hover {
+  transform: translateX(-20px);
+}
+
+.disciplines .curriculum-structure .period .subjects .subject:hover {
+  transform: scale(1.05);
+}
+
+.disciplines .curriculum-structure .period .subjects .subject a {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: first baseline;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.disciplines .curriculum-structure .period .subjects .subject a span {
+  font-weight: 800;
+  color: var(--quaternary-color);
+}
+
+.disciplines .curriculum-structure .period .subjects .subject a img {
+  width: 10rem;
+  margin: auto;
 }
 
 /* =========================== container-right =============================== */
