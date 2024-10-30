@@ -61,7 +61,124 @@
     </section>
 
     <section class="container">
-      <section class="container-left"></section>
+      <section class="container-left">
+        <section class="projects">
+          <header>
+            <h1>Projetos do Curso de ADS</h1>
+          </header>
+
+          <section class="filter-section">
+            <label for="filter-year">Ano:</label>
+            <select id="filter-year">
+              <option value="">Todos</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+            </select>
+
+            <label for="filter-type">Tipo de Parceria:</label>
+            <select id="filter-type">
+              <option value="">Todos</option>
+              <option value="parceria">Parceria com Alunos</option>
+              <option value="coordenacao">Coordenação</option>
+            </select>
+
+            <label for="filter-tech">Tecnologia:</label>
+            <input
+              type="text"
+              id="filter-tech"
+              placeholder="Ex: Django, React"
+            />
+          </section>
+
+          <section class="banner">
+            <h2>Parcerias e Projetos da Coordenação</h2>
+            <p>
+              Conheça as iniciativas do curso de ADS desenvolvidas em conjunto
+              com os alunos ou pela coordenação.
+            </p>
+          </section>
+
+          <main class="project-list">
+            <div
+              class="project-card"
+              data-year="2024"
+              data-type="parceria"
+              data-tech="Django, React"
+            >
+              <h3>Projeto WebLinker</h3>
+              <p>
+                Uma plataforma desenvolvida para compartilhamento de links e
+                recursos educacionais.
+              </p>
+              <ul>
+                <li>
+                  <strong>
+                    <i class="fa-solid fa-handshake"></i>
+                    Parceria:
+                  </strong>
+                  Com Alunos
+                </li>
+                <li>
+                  <strong>
+                    <i class="fa-solid fa-calendar"></i>
+                    Data de Conclusão:
+                  </strong>
+                  Março de 2024
+                </li>
+                <li>
+                  <strong>
+                    <i class="fa-solid fa-microchip"></i>
+                    Tecnologias:
+                  </strong>
+                  Django, React
+                </li>
+              </ul>
+              <button onclick="openProjectDetails('weblinker')">
+                Saiba Mais
+              </button>
+            </div>
+
+            <div
+              class="project-card"
+              data-year="2024"
+              data-type="coordenacao"
+              data-tech="Flutter"
+            >
+              <h3>Kitanda Delivery</h3>
+              <p>
+                Aplicativo focado em vendas locais, desenvolvido pela
+                coordenação para fortalecer a comunidade.
+              </p>
+              <ul>
+                <li>
+                  <strong>
+                    <i class="fa-solid fa-handshake"></i>
+                    Parceria:
+                  </strong>
+                  Coordenação
+                </li>
+                <li>
+                  <strong>
+                    <i class="fa-solid fa-calendar"></i>
+                    Data de Conclusão:
+                  </strong>
+                  Junho de 2024
+                </li>
+                <li>
+                  <strong>
+                    <i class="fa-solid fa-microchip"></i>
+                    Tecnologias:
+                  </strong>
+                  Flutter
+                </li>
+              </ul>
+              <button onclick="openProjectDetails('kitanda')">
+                Saiba Mais
+              </button>
+            </div>
+          </main>
+        </section>
+      </section>
       <section class="container-right">
         <section class="utilities">
           <h1>UTILIDADES</h1>
@@ -150,5 +267,6 @@
         Criado pelos alunos de <span>ADS</span> | todos os direitos reservados!
       </div>
     </section>
+    <script src="../js/projects.js"></script>
   </body>
 </html>

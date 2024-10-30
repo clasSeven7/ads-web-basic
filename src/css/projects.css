@@ -149,6 +149,137 @@ ul li {
   padding: 0 2rem 2rem 2rem;
 }
 
+.projects {
+  padding: 0;
+}
+
+.projects header {
+  /* background-color: #3d3d99; */
+  color: var(--primary-color);
+  font-size: 4rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.projects .banner {
+  background-color: var(--white-color);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.projects .banner h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.projects .banner p {
+  color: var(--tertiary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.projects .filter-section {
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  grid-auto-flow: calc(50% - 2rem);
+  grid-area: auto;
+  box-shadow: var(--box-shadow);
+  background-color: var(--white-color);
+  justify-content: space-between;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1.3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.projects .filter-section label {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.projects .filter-section select {
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: left;
+  background-color: #fff;
+  border: 0.1rem solid #e0e0e0;
+}
+
+.projects .filter-section select:hover {
+  border: 0.1rem solid var(--secondary-color);
+}
+
+.projects .filter-section input {
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: left;
+  border: 0.1rem solid #e0e0e0;
+}
+
+.projects .filter-section input:hover {
+  border: 0.1rem solid var(--secondary-color);
+}
+
+.projects .project-list {
+  display: flex;
+  max-width: 100rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.projects .project-list .project-card {
+  background-color: var(--white-color);
+  border: var(--border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: calc(50% - 20px);
+  box-shadow: var(--box-shadow);
+}
+
+.projects .project-list .project-card h3 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projects .project-list .project-card p {
+  color: var(--tertiary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.projects .project-list .project-card ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.projects .project-list .project-card ul li {
+  color: var(--tertiary-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects .project-list .project-card button {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.projects .project-list .project-card button:hover {
+  background-color: var(--secondary-color);
+}
+
 /* =========================== container-right =============================== */
 
 .container-right {

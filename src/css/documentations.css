@@ -148,11 +148,11 @@ ul li {
 
 .container-left {
   flex: 4; /* 80% */
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .requirements {
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
   border-radius: 0.8rem;
 }
 

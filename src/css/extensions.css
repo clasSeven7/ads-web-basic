@@ -149,6 +149,80 @@ ul li {
   padding: 0 2rem 2rem 2rem;
 }
 
+.extensions {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #5a67d8;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+.extensions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.extension-category {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.extension-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.extension-item {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.extension-item h3 {
+  font-size: 18px;
+  color: #5a67d8;
+}
+
+.extension-item p {
+  font-size: 14px;
+  color: #444;
+}
+
+.extension-item .professor,
+.extension-item .topic {
+  font-style: italic;
+  color: #666;
+}
+
 /* =========================== container-right =============================== */
 
 .container-right {
