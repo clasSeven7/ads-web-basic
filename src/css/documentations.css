@@ -174,7 +174,6 @@ ul li {
   background-color: var(--primary-color);
   color: var(--white-color);
   padding: 1rem;
-  margin-top: 2.2rem;
   font-weight: bold;
   cursor: pointer;
   display: flex;
@@ -196,7 +195,8 @@ ul li {
   margin-right: 0.5rem;
 }
 
-.requirements .document-list {
+.requirements .document-list-events,
+.requirements .document-list-requirements {
   max-height: 0;
   overflow: hidden;
   background-color: var(--white-color);
@@ -206,14 +206,19 @@ ul li {
   padding: 0.5rem 2rem 2rem 2rem;
   transition: max-height 0.4s ease, opacity 0.4s ease;
   opacity: 0;
+  display: none;
 }
 
-.requirements .document-list.active {
+.requirements .document-list-events.active,
+.requirements .document-list-requirements.active {
+  display: block;
+  margin-bottom: 1rem;
   max-height: 50rem;
   opacity: 1;
 }
 
-.requirements .document-list li {
+.requirements .document-list-events li,
+.requirements .document-list-requirements li {
   list-style: none;
   padding: 1rem;
   border-bottom: 1px solid #e0e0e0;
@@ -222,7 +227,8 @@ ul li {
   align-items: center;
 }
 
-.requirements .document-list li a {
+.requirements .document-list-events li a,
+.requirements .document-list-requirements li a {
   color: var(--primary-color);
   font-size: 1.3rem;
   text-decoration: none;
@@ -232,11 +238,13 @@ ul li {
   transition: color 0.3s;
 }
 
-.requirements .document-list li a:hover {
+.requirements .document-list-events li a:hover,
+.requirements .document-list-requirements li a:hover {
   color: var(--secondary-color);
 }
 
-.requirements .document-list li i {
+.requirements .document-list-events li i,
+.requirements .document-list-requirements li i {
   margin-right: 1rem;
 }
 
@@ -249,7 +257,8 @@ ul li {
 .files-section h1 {
   color: #ff6600;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   font-size: 1.6rem;
 }
 
